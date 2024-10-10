@@ -1,0 +1,36 @@
+<!-- // W.A.P to find a palindrome nubers  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Palindrome Checker</h2>
+    <input type="text" id="is" placeholder="Enter a string">
+    <button onclick="p()">Check</button>
+    <p id="r"></p>
+
+    <script>
+        function p() {
+            let str = document.getElementById("is").value;
+            let rs = "";
+
+            for (let i = str.length - 1; i >= 0; i--) {
+                rs += str[i];
+            }
+
+            if (str === rs) {
+                document.getElementById("r").innerHTML = str + ' is a palindrome.';
+            } else {
+                document.getElementById("r").innerHTML = str + ' is not a palindrome.';
+            }
+        }
+    </script>
+</body>
+
+</html>

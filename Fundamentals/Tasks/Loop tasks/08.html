@@ -1,0 +1,28 @@
+<!-- // W.A.P to find a odd|even numbers take input from users -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Check if a number is Odd or Even</h2>
+
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button onclick="checkOddEven()">Check</button>
+
+    <p id="result"></p>
+
+    <script>     
+      function checkOddEven() {
+        const number = document.getElementById("numberInput").value;
+
+        if (number % 2 == 0) {
+          document.getElementById("result").innerText = number + " is Even";
+        } else {
+          document.getElementById("result").innerText = number + " is Odd";
+        }
+      }
+    </script>
+  </body>
+</html>
