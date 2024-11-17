@@ -1,0 +1,46 @@
+<!-- js program to validate the forms -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h3>Get Started</h3>
+  
+        <input type="text" id="name" placeholder="Name"><br><br>
+
+        <input type="email" id="email" placeholder="E-mail"><br><br>
+        
+        <input type="password" id="password" placeholder="Password"><br><br>
+
+        <button>Submit</button>
+    </form>
+    <script>
+        function valid() {
+            let user = document.getElementById('name').value;
+            if (user == "") {
+                alert('please enter your name')
+            }
+        }
+
+        function valid() {
+            let user = document.getElementById('email').value;
+            if (user == "") {
+                alert('please enter your email ')
+            }
+        }
+
+        function valid() {
+            let user = document.getElementById('password').value;
+            if (user == "") {
+                alert('please enter password')
+            }
+        }
+    </script>
+</body>
+
+</html>
