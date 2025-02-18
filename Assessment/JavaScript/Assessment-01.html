@@ -1,0 +1,12 @@
+<script>
+function abc(...arr) {
+    return arr.reduce((acc, num)=>{
+        acc[num]=(acc[num] || 0) + 1;
+        return acc;
+    },{});
+}
+
+console.log(abc(1,2,2,3));
+console.log(abc(9,9,9,99));
+console.log(abc(4,3,2,1));
+</script>

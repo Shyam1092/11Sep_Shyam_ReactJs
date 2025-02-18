@@ -1,0 +1,47 @@
+<!-- Create a digital clock that updates every second using setInterval(). -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #clock {
+            font-family: 'Arial', sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock"></div>
+
+    <script>
+        function updateClock() {
+            let now = new Date();
+            let hours = String(now.getHours()).padStart(2, '0');
+            let minutes = String(now.getMinutes()).padStart(2, '0');
+            let seconds = String(now.getSeconds()).padStart(2, '0');
+
+            let timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock when the page loads
+        updateClock();
+
+    </script>
+</body>
+
+</html>
