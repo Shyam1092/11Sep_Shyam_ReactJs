@@ -1,0 +1,34 @@
+{
+    "employee":[
+        {
+            "id":1,
+            "name":"trupti",
+            "age":23,
+            "salary":13500,
+            "department":"frontend devloper"
+      },
+      {
+        "id":1,
+        "name":"vishva",
+        "age":23,
+        "salary":33500,
+        "department":"frontend devloper"
+  },
+  {
+    "id":1,
+    "name":"dixita",
+    "age":23,
+    "salary":23500,
+    "department":"frontend devloper"
+},
+{
+    "id":1,
+    "name":"janvi",
+    "age":23,
+    "salary":33500,
+    "department":"frontend devloper"
+}
+
+    ]
+    
+}
